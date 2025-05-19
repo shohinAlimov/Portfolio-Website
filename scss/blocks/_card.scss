@@ -1,0 +1,134 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: $color-gin;
+  color: $color-black;
+  height: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    transition: opacity $transition-300;
+    z-index: 1;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+
+    .card__info {
+      opacity: 1;
+      user-select: unset;
+    }
+  }
+
+  &--project-1 {
+    background-image: url(../../img/images/project1.jpg);
+  }
+
+  &--project-2 {
+    background-image: url(../../img/images/project2.jpg);
+  }
+
+  &--project-3 {
+    background-image: url(../../img/images/project3.jpg);
+  }
+
+  &__info {
+    position: relative;
+    opacity: 0;
+    user-select: none;
+    transition: opacity $transition-300;
+    z-index: 2;
+
+    &-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      margin: 0 0 8px 0;
+    }
+
+    &-langs {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: rgba($color: #ffffff, $alpha: 0.7);
+
+      &:not(:last-child)::after {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+        border-radius: 50%;
+        transform: translate(12px, -4px); // настраивай по визуалу }
+      }
+    }
+
+    &-title {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+      color: $color-white;
+      display: block;
+      margin: 0 0 18px 0;
+    }
+
+    &-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-yellow;
+      gap: 8px;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0px;
+        height: 2px;
+        background-color: $color-yellow;
+        opacity: 1;
+      }
+
+      // END line (grows from left to right)
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: $color-yellow;
+        transition: width $transition-300;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      & svg {
+        transition: transform $transition-300;
+      }
+
+      &:hover svg {
+        transform: translateX(10px);
+      }
+    }
+  }
+}

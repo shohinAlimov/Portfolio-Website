@@ -1,0 +1,38 @@
+.services {
+  padding: 100px 0;
+  background-color: #E9F0EC;
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    margin: 0 0 24px 0;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0 auto 50px;
+    text-align: center;
+    max-width: 600px;
+    color: $color-cornflower-blue;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    min-height: 520px;
+  }
+}

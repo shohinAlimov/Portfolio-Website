@@ -5,12 +5,500 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shohin's Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
-
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__name-link" href="./index.html">
+          Shohin Alimov
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Project</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Services</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Resume</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-btn btn btn--primary" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="visually-hidden">Shohin Alimov' Portfolio Website </h1>
+      <div class="container">
+        <div class="hero__wrapper">
+          <h2 class="hero__title">👋 Hey, I&rsquo;m Shohin<br> Front-End Developer.</h2>
+          <p class="hero__text">Front-End Developer focused on&nbsp;clean, responsive interfaces and pixel-perfect
+            layouts. I&nbsp;specialize
+            in&nbsp;HTML, SCSS, JavaScript, TypeScript, and React. I&nbsp;build fast, adaptive websites with structured
+            code and
+            attention to&nbsp;visual detail.</p>
+          <a class="hero__hire btn btn--primary" href="#">
+            Hire me
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 12H20.25" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cases">
+      <div class="container">
+        <div class="cases__wrapper">
+          <div class="cases__top">
+            <div class="cases__info">
+              <h2 class="cases__title">Latest Case Study</h2>
+              <p class="cases__text">A recent project where I built a fast, responsive web app with clean design and
+                smooth user experience.
+              </p>
+            </div>
+            <div class="cases__btn-navigation">
+              <div class="cases__btn-prev btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.25 12H3.75" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cases__btn-next btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.75 12H20.25" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <ul class="cases__list swiper-wrapper">
+              <!-- Slides -->
+              <li class="cases__item swiper-slide">
+                <a class="card card--project-1" href="#" target="_blank"></a>
+              </li>
+              <li class="cases__item swiper-slide">
+                <a class="card card--project-2" href="#">
+                  <div class="card__info">
+                    <span class="card__info-group">
+                      <span class="card__info-langs">Java</span>
+                      <span class="card__info-langs">HTML</span>
+                      <span class="card__info-langs">CSS</span>
+                    </span>
+                    <span class="card__info-title">Relik - Admin Dashboard</span>
+                    <span class="card__info-link" href="#">
+                      View Case Study
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="#F3DB61" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#F3DB61" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="cases__item swiper-slide">
+                <a class="card card--project-3" href="#"></a>
+              </li>
+              <li class="cases__item swiper-slide">
+                <a class="card" href="https://shohinalimov.github.io/castaway-landing/">My Project</a>
+              </li>
+              <li class="cases__item swiper-slide">
+                <a class="card" href="#">Slide 5</a>
+              </li>
+              <li class="cases__item swiper-slide">
+                <a class="card" href="#">Slide 6</a>
+              </li>
+
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="services__wrapper">
+          <h2 class="services__title">My Services</h2>
+          <p class="services__text">I offer front-end development services focused on creating responsive,
+            user-friendly, and visually appealing websites
+            tailored to your needs.</p>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="service-card" href="#">
+                <div class="service-card__inner">
+                  <img class="service-card__image" src="#" alt="">
+                  <span class="service-card__title">Responsive Web Design</span>
+                  <p class="service-card__text">Ensuring your site looks and works great on all devices.</p>
+                </div>
+                <a class="service-card__link" href="#">Let's Work Together
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#236C44" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#236C44" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="services__item">
+              <div class="service-card" href="#">
+                <img class="service-card__image" src="#" alt="">
+                <span class="service-card__title">Component-Based UI Development</span>
+                <p class="service-card__text">Building clean, reusable UI components for scalable front-end apps.</p>
+                <a class="service-card__link" href="#">Let's Work Together
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#236C44" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#236C44" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+
+                </a>
+              </div>
+            </li>
+            <li class="services__item">
+              <div class="service-card" href="#">
+                <img class="service-card__image" src="#" alt="">
+                <span class="service-card__title">Smooth UI Animations</span>
+                <p class="service-card__text">Creating subtle, modern animations to enhance user interaction and bring
+                  your interface to life.
+                </p>
+                <a href="#" class="service-card__link">Let's Work Together
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#236C44" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#236C44" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary">
+      <div class="container">
+        <h2 class="visually-hidden">Summary part</h2>
+        <div class="summary__wrapper">
+          <ul class="summary__list">
+            <li class="summary__item">
+              <div class="summary__card">
+                <svg class="summary__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 33L24 43.5L42 33" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M6 24L24 34.5L42 24" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M6 15L24 25.5L42 15L24 4.5L6 15Z" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="summary__quantity">1+</span>
+                <span class="summary__info">Years of experience</span>
+              </div>
+            </li>
+            <li class="summary__item">
+              <div class="summary__card">
+                <svg class="summary__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M40.5 13.5H7.5C6.67157 13.5 6 14.1716 6 15V39C6 39.8284 6.67157 40.5 7.5 40.5H40.5C41.3284 40.5 42 39.8284 42 39V15C42 14.1716 41.3284 13.5 40.5 13.5Z"
+                    stroke="#236C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M31.5 13.5V10.5C31.5 9.70435 31.1839 8.94129 30.6213 8.37868C30.0587 7.81607 29.2956 7.5 28.5 7.5H19.5C18.7044 7.5 17.9413 7.81607 17.3787 8.37868C16.8161 8.94129 16.5 9.70435 16.5 10.5V13.5"
+                    stroke="#236C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M42 23.6812C36.5293 26.8451 30.3197 28.5074 24 28.4999C17.6791 28.5164 11.4673 26.8534 6 23.6812"
+                    stroke="#236C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M21.75 22.5H26.25" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
+                <span class="summary__quantity">6+</span>
+                <span class="summary__info">Completed Projects</span>
+              </div>
+            </li>
+            <li class="summary__item">
+              <div class="summary__card">
+                <svg class="summary__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z"
+                    stroke="#236C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M17.25 22.5C18.4926 22.5 19.5 21.4926 19.5 20.25C19.5 19.0074 18.4926 18 17.25 18C16.0074 18 15 19.0074 15 20.25C15 21.4926 16.0074 22.5 17.25 22.5Z"
+                    fill="#236C44" />
+                  <path d="M28.5 20.25H33" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M31.8002 28.5C31.0072 29.8661 29.8694 31 28.5005 31.7882C27.1317 32.5764 25.5798 32.9913 24.0002 32.9913C22.4206 32.9913 20.8687 32.5764 19.4999 31.7882C18.131 31 16.9932 29.8661 16.2002 28.5"
+                    stroke="#236C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="summary__quantity">1+</span>
+                <span class="summary__info">Happy Clients</span>
+              </div>
+            </li>
+            <li class="summary__item">
+              <div class="summary__card">
+                <svg class="summary__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.501 4.5V10.5" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M22.5 4.5V10.5" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M28.499 4.5V10.5" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5.99902 40.5H38.999" stroke="#236C44" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M15.6178 40.4998C12.7469 39.1824 10.3145 37.0688 8.60943 34.4098C6.90439 31.7509 5.99838 28.6584 5.99902 25.4998V16.4998H38.999V25.4998C38.9997 28.6584 38.0937 31.7509 36.3886 34.4098C34.6836 37.0688 32.2511 39.1824 29.3803 40.4998"
+                    stroke="#236C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M38.9998 16.4998C40.5911 16.4998 42.1172 17.1319 43.2424 18.2571C44.3677 19.3823 44.9998 20.9085 44.9998 22.4998V23.9998C44.9998 25.5911 44.3677 27.1172 43.2424 28.2424C42.1172 29.3676 40.5911 29.9998 38.9998 29.9998H38.3623"
+                    stroke="#236C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="summary__quantity">100+</span>
+                <span class="summary__info">Hours of Work</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedbacks">
+      <div class="container">
+        <div class="feedbacks__wrapper">
+          <div class="feedbacks__info">
+            <h2 class="feedbacks__info-title">What Clients Say</h2>
+            <p class="feedbacks__info-subheading">Trusted by&nbsp;professionals&nbsp;&mdash; real feedback from those
+              who&rsquo;ve experienced my&nbsp;work.</p>
+            <div class="feedbacks__review">
+              <svg class="feedbacks__review-coma" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.73624 18.855C4.70003 18.855 1.96973 16.0423 1.96973 11.8747C1.96973 8.12439 5.10185 5 9.34412 5C13.9908 5 17.4243 8.7503 17.4243 14.4788C17.4243 27.4992 7.93003 32.7074 1.96973 33.3333V27.6048C6.01109 26.8759 10.5547 22.8139 10.7582 18.3321C10.5547 18.4352 9.74851 18.855 8.73624 18.855Z"
+                  fill="#236C44" />
+                <path
+                  d="M29.3427 18.855C25.3039 18.855 22.5762 16.0423 22.5762 11.8747C22.5762 8.12439 25.7083 5 29.9506 5C34.5972 5 38.0307 8.7503 38.0307 14.4788C38.0307 27.4992 28.5365 32.7074 22.5762 33.3333V27.6048C26.6175 26.8759 31.1612 22.8139 31.3647 18.3321C31.1612 18.4352 30.355 18.855 29.3427 18.855Z"
+                  fill="#236C44" />
+              </svg>
+              <p class="feedbacks__review-text">
+                Working with Shohin was a&nbsp;game-changer. He&nbsp;quickly understood the vision, delivered clean,
+                responsive code,
+                and added subtle but powerful animations that brought our product to&nbsp;life. Communication was
+                smooth, deadlines were
+                met, and the final result exceeded expectations. Highly recommend!
+              </p>
+              <svg class="feedbacks__review-bottom-icon" width="64" height="19" viewBox="0 0 64 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M46.4152 15.9413C47.1436 16.8875 47.5078 17.3606 48 17.3606C48.4922 17.3606 48.8564 16.8875 49.5848 15.9413L59.3777 3.21999C60.457 1.81787 60.9967 1.11682 60.7218 0.558409C60.447 0 59.5623 0 57.7928 0H38.2072C36.4377 0 35.553 0 35.2782 0.558409C35.0033 1.11682 35.543 1.81787 36.6223 3.21999L46.4152 15.9413Z"
+                  fill="#FAF1C0" />
+              </svg>
+            </div>
+            <div class="feedbacks__review-bottom">
+              <div class="feedbacks__review-user">
+                <img class="feedbacks__review-logo" src="./img/images/user1.png" alt="User Logo" width="72" height="72">
+                <span class="feedbacks__review-group">
+                  <span class="feedbacks__review-name">Cameron Williamsons</span>
+                  <span class="feedbacks__review-job">Founder of Relik</span>
+                </span>
+              </div>
+              <div class="feedbacks__btn-navigation">
+                <div class="feedbacks__btn-prev btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.25 12H3.75" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="feedbacks__btn-next btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <img class="feedbacks__image" src="./img/images/my-photo.JPG" alt="My photo" width="536" height="648">
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__left">
+            <h2 class="contacts__title">Have a&nbsp;project idea. Let&rsquo;s work together!</h2>
+            <p class="contacts__text">Do&nbsp;you fancy saying hi&nbsp;to&nbsp;me&nbsp;or&nbsp;do&nbsp;you want
+              to&nbsp;get started with your project and you
+              need my&nbsp;help? Feel free to&nbsp;contact&nbsp;me.</p>
+            <a class="contacts__link btn btn--primary" href="#">
+              Let's Work Together
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="contacts__right">
+            <a class="contacts__block" href="mailto:shohinalimov2008@gmail.com">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35 8.75L20 22.5L5 8.75" stroke="#F3DB61" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M5 8.75H35V30C35 30.3315 34.8683 30.6495 34.6339 30.8839C34.3995 31.1183 34.0815 31.25 33.75 31.25H6.25C5.91848 31.25 5.60054 31.1183 5.36612 30.8839C5.1317 30.6495 5 30.3315 5 30V8.75Z"
+                  stroke="#F3DB61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.2656 20L5.39062 30.8906" stroke="#F3DB61" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M34.6094 30.8906L22.7344 20" stroke="#F3DB61" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+              <span class="contacts__info">
+                <span class="contacts__info-action">Chat with me</span>
+                <span class="contacts__info-text">shohinalimov2008@gmail.com</span>
+              </span>
+
+
+            </a>
+
+            <a class="contacts__block" href="tel:+992937210888">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.9062 6.25C27.0265 6.81902 28.9597 7.93571 30.512 9.48799C32.0643 11.0403 33.181 12.9735 33.75 15.0937"
+                  stroke="#F3DB61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M23.6094 11.0781C24.8846 11.4168 26.0476 12.0865 26.9805 13.0195C27.9135 13.9524 28.5832 15.1154 28.9219 16.3906"
+                  stroke="#F3DB61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M14.4531 19.4998C15.7394 22.1561 17.8873 24.2985 20.5469 25.5779C20.7431 25.6708 20.96 25.711 21.1765 25.6946C21.3929 25.6782 21.6013 25.6056 21.7812 25.4842L25.6875 22.8748C25.8601 22.7578 26.0595 22.6863 26.2672 22.6672C26.4748 22.6481 26.6839 22.6819 26.875 22.7654L34.1875 25.9061C34.4374 26.0101 34.6462 26.1934 34.7817 26.4277C34.9173 26.662 34.972 26.9344 34.9375 27.2029C34.7057 29.0119 33.8228 30.6744 32.4538 31.8795C31.0849 33.0845 29.3238 33.7494 27.5 33.7498C21.8641 33.7498 16.4591 31.511 12.474 27.5258C8.48883 23.5407 6.25 18.1357 6.25 12.4998C6.25041 10.6761 6.91533 8.91493 8.12035 7.54599C9.32537 6.17704 10.9879 5.29408 12.7969 5.06231C13.0654 5.02782 13.3378 5.08255 13.5721 5.21807C13.8064 5.35359 13.9897 5.56239 14.0937 5.81231L17.2344 13.1404C17.316 13.3285 17.3502 13.5337 17.3339 13.7381C17.3175 13.9424 17.2512 14.1396 17.1406 14.3123L14.5312 18.2811C14.4151 18.4606 14.3469 18.6669 14.3332 18.8802C14.3195 19.0936 14.3608 19.3069 14.4531 19.4998V19.4998Z"
+                  stroke="#F3DB61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+
+              <span class="contacts__info">
+                <span class="contacts__info-action">Call me</span>
+                <span class="contacts__info-text">+992 93-721-08-88</span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__me">
+          <span class="footer__name">Shohin Alimov</span>
+          <span class="footer__address">
+            4517&nbsp;Ave. Manchester, Kentucky 39495, Los Angeles, California, USA
+          </span>
+        </div>
+
+        <div class="footer__navigation">
+          <nav class="footer__main-nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">About</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Resume</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Article</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Services</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Projects</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Pricing Plans</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Facebook</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Instagram</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Twitter</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">All content &copy;&nbsp;2025 Shohin Alimov and respective copyright holders.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script type="module" src="./logic/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+.btn {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  &--primary {
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 24px;
+    background-color: $color-yellow;
+    border-radius: 4px;
+    color: $color-black;
+  }
+}

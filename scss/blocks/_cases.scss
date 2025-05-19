@@ -1,0 +1,61 @@
+.cases {
+  padding: 100px 0;
+
+  &__top {
+    display: grid;
+    grid-template-columns: 700px auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 0 0 50px 0;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $color-cornflower-blue;
+    margin: 0;
+  }
+
+  &__btn-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    min-height: 530px;
+  }
+
+  &__btn-navigation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__btn-next,
+  &__btn-prev {
+    padding: 16px;
+    border: 2px solid $color-yellow;
+    border-radius: 50%;
+    transition: background-color $transition-300;
+
+    &:hover {
+      background-color: $color-yellow;
+    }
+  }
+}

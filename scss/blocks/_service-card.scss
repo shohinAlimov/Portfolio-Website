@@ -1,0 +1,79 @@
+.service-card {
+  padding: 40px;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 16px 80px rgba(19, 34, 56, 0.12);
+  height: 100%;
+
+  &__image {
+    height: 250px;
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $color-black;
+    display: block;
+    margin: 0 0 12px 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-cornflower-blue;
+    margin: 0 0 16px 0;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $color-green;
+    margin: auto 0 0;
+    max-width: 195px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0px;
+      height: 2px;
+      background-color: $color-green;
+      opacity: 1;
+    }
+
+    // END line (grows from left to right)
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: $color-green;
+      transition: width $transition-300;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    & svg {
+      transition: transform $transition-300;
+    }
+
+    &:hover svg {
+      transform: translateX(10px);
+    }
+  }
+}
